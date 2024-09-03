@@ -16,8 +16,8 @@
   const position = ref(props.window.position);
   
   // 监听 props 的变化
-  watch(() => props.window.position, (newContent) => {
-    position.value = newContent;
+  watch(() => props.window.position, (newPosition) => {
+    position.value = newPosition;
     update();
   }, { immediate: true });
   
